@@ -1,0 +1,17 @@
+{
+	"server": "hub-cloud.browserstack.com",
+	"user": "adaskalopoulos1",
+	"key": "RwofYrpjLEBwrwzpTdSc",
+
+	"capabilities": {
+		"project": "Example",
+		"build": "Java Selenide RFQ-PO Process",
+		"browserstack.debug": true
+	},
+
+	"environments": {
+		"chrome": {
+			"browser": "chrome"
+		}
+	}
+}

@@ -1,0 +1,31 @@
+#  Template maven-build
+
+#  This template allows you to test and build your Java project with Maven.
+#  The workflow allows running tests, code checkstyle and security scans on the default branch.
+
+# Prerequisites: pom.xml and appropriate project structure should exist in the repository.
+
+image: maven:3.6.3
+
+pipelines:
+  default:
+    - step:
+        name: Build and Test
+        services:
+          - chrome
+        caches:
+          - maven
+        script:
+          - mvn --version
+          - mvn test -P single
+        artifacts:
+          - target/surefire-reports/**
+
+definitions:
+  caches:
+    mavenwrapper: ~/.mvn/wrapper
+  services:
+    chrome:
+      image: selenium/standalone-chrome
+      environment:
+        port: "4444"

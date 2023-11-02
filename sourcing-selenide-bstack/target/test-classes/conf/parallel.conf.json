@@ -1,0 +1,26 @@
+{
+	"server": "hub-cloud.browserstack.com",
+	"user": "adaskalopoulos1",
+	"key": "RwofYrpjLEBwrwzpTdSc",
+
+	"capabilities": {
+		"project": "Example",
+		"build": "Java Selenide Parallel",
+		"browserstack.debug": true
+	},
+
+	"environments": {
+		"chrome": {
+			"browser": "chrome"
+		},
+		"firefox": {
+			"browser": "firefox"
+		},
+		"safari": {
+			"browser": "safari",
+			"browser_version": "latest",
+			"os": "OS X",
+			"os_version": "Big Sur"
+		}
+	}
+}

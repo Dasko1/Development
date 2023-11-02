@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Single]" guice-stage="DEVELOPMENT" verbose="0">
+  <test name="SingleTest(failed)">
+    <parameter name="environment" value="chrome"/>
+    <parameter name="config" value="single.conf.json"/>
+    <classes>
+      <class name="com.browserstack.single.CreateRFQ">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="createRFQTest"/>
+        </methods>
+      </class> <!-- com.browserstack.single.CreateRFQ -->
+    </classes>
+  </test> <!-- SingleTest(failed) -->
+</suite> <!-- Failed suite [Single] -->
